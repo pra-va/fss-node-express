@@ -53,6 +53,10 @@ app.get("/name", (req, res) => {
     res.json({
         name: `${req.query.first} ${req.query.last}`
     });
+}).post("/name", (req, res) => {
+    res.json({
+        name: `${req.body.first} ${req.body.last}`
+    })
 });
 
 
